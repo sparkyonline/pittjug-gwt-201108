@@ -12,4 +12,4 @@ There are a few plugins/settings for Eclipse that are necessary before diving in
   * [http://m2eclipse.sonatype.org/installing-m2eclipse.html m2Eclipse Extras] from the [http://m2eclipse.sonatype.org/sites/m2e-extras extras update site] for Maven WTP Integration
   * [http://code.google.com/eclipse/docs/download.html Google Plugin for Eclipse] from the [http://dl.google.com/eclipse/plugin/3.7 update site] for the Google-provided functionality and SDKs.  (Leave out the GWT Designer for now, so we can install the full-fledged version next.)
   * [http://code.google.com/webtoolkit/tools/download-gwtdesigner.html GWT Designer] from [http://dl.google.com/eclipse/inst/d2gwt/latest/3.7 its update site] to get the complete build of the designer.
-  * Update Eclipse configuration to execute {{{process-resources}}} maven goal on import:<br><img src="./eclipse-import-process-resources.png">
+  * Update Eclipse configuration to execute {{{process-resources}}} maven goal on import:<br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-import-process-resources.png">
