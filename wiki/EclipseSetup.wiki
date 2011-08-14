@@ -18,4 +18,4 @@ There are a few plugins/settings for Eclipse that are necessary before diving in
 
 == Import the Project ==
 
-  * Import... Maven > Existing Maven Projects:<br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-import-existing-maven-project.png">
+  * Import... Maven > Existing Maven Projects:<br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-import-existing-maven-project.png"><br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-import-pom.png">
