@@ -8,3 +8,5 @@ There are a few plugins/settings for Eclipse that are necessary before diving in
 = Details =
 
   * Assumption: WTP already set up with a Server
+  * [http://m2eclipse.sonatype.org/installing-m2eclipse.html m2Eclipse Core] from the [http://m2eclipse.sonatype.org/sites/m2e core update site] for Maven Integration
+  * [http://m2eclipse.sonatype.org/installing-m2eclipse.html m2Eclipse Extras] from the [http://m2eclipse.sonatype.org/sites/m2e-extras extras update site] for Maven WTP Integration
