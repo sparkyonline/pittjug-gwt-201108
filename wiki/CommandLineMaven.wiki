@@ -5,3 +5,39 @@
 Utilizing the command-line, maven support to create and launch GWT projects.
 
 = Details =
+
+== GWT Maven Plugin Archetype ==
+
+There is an [http://mojo.codehaus.org/gwt-maven-plugin/user-guide/archetype.html archetype] to aid in creation of GWT projects:
+
+{{{
+C:\PittJUG Presentation\pittjug-gwt-201108>mvn --batch-mode ^
+More? archetype:generate ^
+More? -DarchetypeRepository=repo1.maven.org ^
+More? -DarchetypeGroupId=org.codehaus.mojo ^
+More? -DarchetypeArtifactId=gwt-maven-plugin ^
+More? -DarchetypeVersion=2.3.0-1 ^
+More? -DgroupId=net.stackdump.example.gwt ^
+More? -DartifactId=gwtexample ^
+More? -Dversion=1.0-SNAPSHOT ^
+More? -Dpackage=net.stackdump.example.gwt.gwtexample ^
+More? -Dmodule=GWTExample
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'archetype'.
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Default Project
+[INFO]    task-segment: [archetype:generate] (aggregator-style)
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing archetype:generate
+[INFO] No goals needed for project - skipping
+[INFO] [archetype:generate {execution: default-cli}]
+[INFO] Generating project in Batch mode
+[INFO] Archetype defined by properties
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 second
+[INFO] Finished at: Sun Aug 14 15:20:42 EDT 2011
+[INFO] Final Memory: 12M/245M
+[INFO] ------------------------------------------------------------------------
+}}}
