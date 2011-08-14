@@ -20,3 +20,6 @@ There are a few plugins/settings for Eclipse that are necessary before diving in
 
   * Import... Maven > Existing Maven Projects:<br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-import-existing-maven-project.png"><br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-import-pom.png">
   * Google provides [http://code.google.com/intl/en/eclipse/docs/faq.html FAQ] entries on using [http://code.google.com/intl/en/eclipse/docs/faq.html#gwt_in_eclipse_for_java_ee WTP] and on using [http://code.google.com/intl/en/eclipse/docs/faq.html#gwt_with_maven Maven] with GWT projects.
+  * Add the Dynamic Web Project you just imported to your Server.  Server should launch successfully at this point.
+  * In the project's build path, remove the "**" exclusion for the main and test resources folders.  This later allows the modules to be detected automatically.
+  * In the project's context menu, select Google > Web Toolkit Settings... and check "Use Google Web Toolkit".  Then, ensure the entry point modules are detected:<br><img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/eclipse-use-google-web-toolkit.png">
