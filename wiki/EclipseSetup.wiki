@@ -1,0 +1,10 @@
+#summary Eclipse Plugins that Help
+
+= Introduction =
+
+There are a few plugins/settings for Eclipse that are necessary before diving in with the mavenized GWT project we just generated.
+
+
+= Details =
+
+  * Assumption: WTP already set up with a Server
