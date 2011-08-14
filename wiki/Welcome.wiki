@@ -7,3 +7,4 @@ This is a collection of docs related to the presentation:
   * [GWTBackground]
   * CommandLineMaven
   * EclipseSetup
+  * [GWTDesigner]
