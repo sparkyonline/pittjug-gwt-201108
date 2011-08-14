@@ -1,4 +1,6 @@
 #summary Welcome to the project wiki.
 = Introduction =
 
-This is a collection of docs related to the presentation.
+This is a collection of docs related to the presentation:
+
+  * MikesBio
