@@ -167,3 +167,5 @@ C:\PittJUG Presentation\pittjug-gwt-201108\gwtexample>mvn gwt:run
 [INFO] Final Memory: 30M/495M
 [INFO] ------------------------------------------------------------------------
 }}}
+
+<img src="http://pittjug-gwt-201108.googlecode.com/svn/wiki/gwt-run-hosted-mode.png">
