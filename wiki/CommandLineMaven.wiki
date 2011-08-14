@@ -1,0 +1,7 @@
+#summary Command-line maven support for GWT
+
+= Introduction =
+
+Utilizing the command-line, maven support to create and launch GWT projects.
+
+= Details =
