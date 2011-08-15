@@ -2,12 +2,12 @@
 
 = Introduction =
 
-The Google Eclipse plugin ships with a lite version of !Windowbuilder's GWT designer, but you can still install the full version separately.
+The Google Eclipse plugin ships with a lite version of Windowbuilder's GWT designer, but you can still install the full version separately.
 
 
 = Details =
 
-Since we installed the full-blown version of the GWT Designer (WindowBuilder), we can use it to inspect and edit our GWT modules.
+Since we installed the full-blown version of the GWT Designer (!WindowBuilder), we can use it to inspect and edit our GWT modules.
 
   * Navigate to the client Entry Point class in Project/Package Explorer.
   * Right-click the class, and select Open With > !WindowBuilder Editor.
