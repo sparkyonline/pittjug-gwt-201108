@@ -21,3 +21,5 @@ In addition, I wanted to test out some features of the GWT stack and build proce
   * GWT Designer (!WindowBuilder)
   * Maven Packaging
   * Any other information I could glean along the way
+
+To better leverage the designer, I decided to replace the entire body of the host HTML page with a composite widget, which would then give me a more WYSIWYG feel.
