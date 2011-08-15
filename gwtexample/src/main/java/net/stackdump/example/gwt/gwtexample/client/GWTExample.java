@@ -1,12 +1,14 @@
 package net.stackdump.example.gwt.gwtexample.client;
 
 import static com.google.gwt.dom.client.Style.Unit.PX;
+import net.stackdump.example.gwt.gwtexample.shared.data.Environment;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
@@ -16,6 +18,8 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.ClickEvent;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -33,6 +37,11 @@ public class GWTExample implements EntryPoint {
    * Create a remote service proxy to talk to the server-side Greeting service.
    */
   private final GreetingServiceAsync greetingService = GWT.create(GreetingService.class);
+  
+  /**
+   * Create a remote service proxy to talk to the server-side Status service. 
+   */
+  private final StatusServiceAsync statusService = GWT.create(StatusService.class);
 
   private final Messages messages = GWT.create(Messages.class);
 
@@ -56,6 +65,24 @@ public class GWTExample implements EntryPoint {
     toolbarPanel.setSize("100%", "35");
     
     Button getStatusButton = new Button(messages.getStatusButton());
+    getStatusButton.addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        statusService.getStatus(new AsyncCallback<Environment>() {
+          
+          @Override
+          public void onSuccess(final Environment env)
+          {
+            Object o = env.getMap();
+          }
+          
+          @Override
+          public void onFailure(final Throwable e)
+          {
+            Window.alert("Error: " + e);
+          }
+        });
+      }
+    });
     toolbarPanel.add(getStatusButton);
     
     Button clearButton = new Button(messages.clearButton());
