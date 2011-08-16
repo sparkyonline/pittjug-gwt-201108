@@ -1,39 +1,21 @@
 package net.stackdump.example.gwt.gwtexample.client;
 
-import static com.google.gwt.dom.client.Style.Unit.PX;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import net.stackdump.example.gwt.gwtexample.shared.data.Emulator;
-import net.stackdump.example.gwt.gwtexample.shared.data.Environment;
-import net.stackdump.example.gwt.gwtexample.shared.data.Instance;
-import net.stackdump.example.gwt.gwtexample.shared.data.InstanceIdentifier;
-import net.stackdump.example.gwt.gwtexample.shared.data.Organization;
-import net.stackdump.example.gwt.gwtexample.shared.data.Session;
-import net.stackdump.example.gwt.gwtexample.shared.data.SessionPool;
-import net.stackdump.example.gwt.gwtexample.shared.data.SessionType;
-
+import net.stackdump.example.gwt.gwtexample.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.event.logical.shared.ResizeEvent;
-import com.google.gwt.event.logical.shared.ResizeHandler;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.dom.client.KeyUpHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DockLayoutPanel;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.ScrollPanel;
-import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.TabLayoutPanel;
+import com.google.gwt.user.client.ui.DialogBox;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.google.gwt.view.client.ListDataProvider;
-import net.stackdump.example.gwt.gwtexample.client.tree.EmulatorTree;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -51,220 +33,117 @@ public class GWTExample implements EntryPoint {
    * Create a remote service proxy to talk to the server-side Greeting service.
    */
   private final GreetingServiceAsync greetingService = GWT.create(GreetingService.class);
-  
-  /**
-   * Create a remote service proxy to talk to the server-side Status service. 
-   */
-  private final StatusServiceAsync statusService = GWT.create(StatusService.class);
 
   private final Messages messages = GWT.create(Messages.class);
-  
-  /**
-   * List that will provide information about an emulator.
-   */
-  private final ListDataProvider<EmulatorRecord> emuList = new ListDataProvider<EmulatorRecord>(
-      EmulatorRecord.KEY_PROVIDER);
-  
-  /**
-   * The list of emulator records, as parsed from the response.
-   */
-  private List<EmulatorRecord> origEmuList;
-  
-  /**
-   * The most recently obtained environment status information.
-   */
-  private Environment environment;
-
-  private EmulatorTable emulatorTable;
-
-  private EmulatorTree emulatorTree;
 
   /**
    * This is the entry point method.
    */
   public void onModuleLoad() {
-    
-    // http://code.google.com/webtoolkit/doc/1.6/FAQ_UI.html#How_do_I_create_an_app_that_fills_the_page_vertically_when_the_b
-    
-    final VerticalPanel resizePanel = new VerticalPanel();
-    resizePanel.setWidth("100%");
-    resizePanel.setHeight(Window.getClientHeight() + "px");
-    
-    final DockLayoutPanel mainPanel = new DockLayoutPanel(PX);
-    mainPanel.setSize("100%", "100%");
-    resizePanel.add(mainPanel);
-    
-    FlowPanel toolbarPanel = new FlowPanel();
-    mainPanel.addNorth(toolbarPanel, 35.0);
-    toolbarPanel.setSize("100%", "35");
-    
-    Button getStatusButton = new Button(messages.getStatusButton());
-    getStatusButton.addClickHandler(new ClickHandler() {
+    final Button sendButton = new Button( messages.sendButton() );
+    final TextBox nameField = new TextBox();
+    nameField.setText( messages.nameField() );
+    final Label errorLabel = new Label();
+
+    // We can add style names to widgets
+    sendButton.addStyleName("sendButton");
+
+    // Add the nameField and sendButton to the RootPanel
+    // Use RootPanel.get() to get the entire body element
+    RootPanel.get("nameFieldContainer").add(nameField);
+    RootPanel.get("sendButtonContainer").add(sendButton);
+    RootPanel.get("errorLabelContainer").add(errorLabel);
+
+    // Focus the cursor on the name field when the app loads
+    nameField.setFocus(true);
+    nameField.selectAll();
+
+    // Create the popup dialog box
+    final DialogBox dialogBox = new DialogBox();
+    dialogBox.setText("Remote Procedure Call");
+    dialogBox.setAnimationEnabled(true);
+    final Button closeButton = new Button("Close");
+    // We can set the id of a widget by accessing its Element
+    closeButton.getElement().setId("closeButton");
+    final Label textToServerLabel = new Label();
+    final HTML serverResponseLabel = new HTML();
+    VerticalPanel dialogVPanel = new VerticalPanel();
+    dialogVPanel.addStyleName("dialogVPanel");
+    dialogVPanel.add(new HTML("<b>Sending name to the server:</b>"));
+    dialogVPanel.add(textToServerLabel);
+    dialogVPanel.add(new HTML("<br><b>Server replies:</b>"));
+    dialogVPanel.add(serverResponseLabel);
+    dialogVPanel.setHorizontalAlignment(VerticalPanel.ALIGN_RIGHT);
+    dialogVPanel.add(closeButton);
+    dialogBox.setWidget(dialogVPanel);
+
+    // Add a handler to close the DialogBox
+    closeButton.addClickHandler(new ClickHandler() {
       public void onClick(ClickEvent event) {
-        statusService.getStatus(new AsyncCallback<Environment>() {
-          
-          @Override
-          public void onSuccess(final Environment env)
-          {
-            updateEmulators(env);
+        dialogBox.hide();
+        sendButton.setEnabled(true);
+        sendButton.setFocus(true);
+      }
+    });
+
+    // Create a handler for the sendButton and nameField
+    class MyHandler implements ClickHandler, KeyUpHandler {
+      /**
+       * Fired when the user clicks on the sendButton.
+       */
+      public void onClick(ClickEvent event) {
+        sendNameToServer();
+      }
+
+      /**
+       * Fired when the user types in the nameField.
+       */
+      public void onKeyUp(KeyUpEvent event) {
+        if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+          sendNameToServer();
+        }
+      }
+
+      /**
+       * Send the name from the nameField to the server and wait for a response.
+       */
+      private void sendNameToServer() {
+        // First, we validate the input.
+        errorLabel.setText("");
+        String textToServer = nameField.getText();
+        if (!FieldVerifier.isValidName(textToServer)) {
+          errorLabel.setText("Please enter at least four characters");
+          return;
+        }
+
+        // Then, we send the input to the server.
+        sendButton.setEnabled(false);
+        textToServerLabel.setText(textToServer);
+        serverResponseLabel.setText("");
+        greetingService.greetServer(textToServer, new AsyncCallback<String>() {
+          public void onFailure(Throwable caught) {
+            // Show the RPC error message to the user
+            dialogBox.setText("Remote Procedure Call - Failure");
+            serverResponseLabel.addStyleName("serverResponseLabelError");
+            serverResponseLabel.setHTML(SERVER_ERROR);
+            dialogBox.center();
+            closeButton.setFocus(true);
           }
-          
-          @Override
-          public void onFailure(final Throwable e)
-          {
-            Window.alert("Error: " + e);
+
+          public void onSuccess(String result) {
+            dialogBox.setText("Remote Procedure Call");
+            serverResponseLabel.removeStyleName("serverResponseLabelError");
+            serverResponseLabel.setHTML(result);
+            dialogBox.center();
+            closeButton.setFocus(true);
           }
         });
       }
-    });
-    toolbarPanel.add(getStatusButton);
-    
-    Button clearButton = new Button(messages.clearButton());
-    clearButton.addClickHandler(new ClickHandler() {
-      public void onClick(ClickEvent event) {
-        origEmuList.clear();
-        resetList();
-        emulatorTree.clear();
-      }
-    });
-    toolbarPanel.add(clearButton);
-    
-    TabLayoutPanel tabPanel = new TabLayoutPanel(1.5, Unit.EM);
-    
-    SimplePanel tablePanel = new SimplePanel();
-    tabPanel.add(tablePanel, messages.tableTab(), false);
-    
-    ScrollPanel tableScrollPanel = new ScrollPanel();
-    tablePanel.setWidget(tableScrollPanel);
-    tableScrollPanel.setSize("100%", "100%");
-    
-    emulatorTable = new EmulatorTable(emuList);
-    tableScrollPanel.setWidget(emulatorTable);
-    emulatorTable.setSize("100%", "100%");
-    
-    SimplePanel treePanel = new SimplePanel();
-    tabPanel.add(treePanel, messages.treeTab(), false);
-    
-    ScrollPanel treeScrollPanel = new ScrollPanel();
-    treePanel.setWidget(treeScrollPanel);
-    treeScrollPanel.setSize("100%", "100%");
-    
-    emulatorTree = new EmulatorTree();
-    treeScrollPanel.setWidget(emulatorTree);
-    emulatorTree.setSize("100%", "100%");
-    mainPanel.add(tabPanel);
-    Window.addResizeHandler(new ResizeHandler() {
-      @Override
-      public void onResize(final ResizeEvent event)
-      {
-        resizePanel.setHeight(event.getHeight() + "px");
-      }
-    });
-    RootLayoutPanel.get().clear();
-    RootLayoutPanel.get().add(resizePanel);
-  }
-  
-  /**
-   * Uses the response to update the UI.
-   * 
-   * @param env The retrieved environment status information.
-   */
-  private void updateEmulators(final Environment env)
-  {
-    final List<EmulatorRecord> records = new ArrayList<EmulatorRecord>();
-    
-    String host;
-    String instanceName;
-    String orgName;
-    String sessionName;
-    SessionType sessionType;
-    String emuSystem;
-    String emuCurrentScreen;
-    
-    InstanceIdentifier id;
-    Instance instance;
-    EmulatorRecord record;
-    
-    int nextID = 0;
-    for (Map.Entry<InstanceIdentifier, Instance> envEntry : env.entrySet())
-    {
-        id = envEntry.getKey();
-        host = id.getHost();
-        instanceName = id.getInstance();
-        instance = envEntry.getValue();
-        
-        for (Organization org : instance.getOrganizations())
-        {
-            orgName = org.getName();
-            
-            for (Session session : org.getSessions())
-            {
-                sessionName = session.getName();
-                sessionType = session.getType();
-                for (Emulator emu : session.getEmulators())
-                {
-                    emuSystem = emu.getSystem();
-                    emuCurrentScreen = emu.getCurrentScreen();
-                    
-                    record = new EmulatorRecord();
-                    record.setID(nextID++);
-                    record.setHost(host);
-                    record.setInstanceName(instanceName);
-                    record.setOrgName(orgName);
-                    record.setSessionName(sessionName);
-                    record.setSessionType(sessionType);
-                    record.setEmuSystem(emuSystem);
-                    record.setEmuCurrentScreen(emuCurrentScreen);
-                    
-                    records.add(record);
-                }
-            }
-            
-            for (SessionPool pool : org.getSessionPools())
-            {
-                for (Session session : pool.getSessions())
-                {
-                    sessionName = session.getName();
-                    sessionType = session.getType();
-                    for (Emulator emu : session.getEmulators())
-                    {
-                        emuSystem = emu.getSystem();
-                        emuCurrentScreen = emu.getCurrentScreen();
-                        
-                        record = new EmulatorRecord();
-                        record.setID(nextID++);
-                        record.setHost(host);
-                        record.setInstanceName(instanceName);
-                        record.setOrgName(orgName);
-                        record.setSessionName(sessionName);
-                        record.setSessionType(sessionType);
-                        record.setEmuSystem(emuSystem);
-                        record.setEmuCurrentScreen(emuCurrentScreen);
-                        
-                        records.add(record);
-                    }
-                }
-            }
-        }
     }
-    
-    origEmuList = records;
-    environment = env;
-    resetList();
-  }
-  
-  /**
-   * Resets the displayed information.
-   */
-  private void resetList()
-  {
-    if (origEmuList != null)
-    {
-      emuList.getList().clear();
-      emulatorTable.getTable().getColumnSortList().clear();
-      emuList.getList().addAll(origEmuList);
-      emulatorTable.getTable().setVisibleRange(0, origEmuList.size());
-      emulatorTree.updateTree(environment);
-    }
+
+    // Add a handler to send the name to the server
+    MyHandler handler = new MyHandler();
+    sendButton.addClickHandler(handler);
+    nameField.addKeyUpHandler(handler);
   }
 }

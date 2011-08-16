@@ -1,7 +1,5 @@
-#Sun Aug 14 19:13:26 EDT 2011
+#Thu Sep 02 10:55:28 CEST 2010
 eclipse.preferences.version=1
 jarsExcludedFromWebInfLib=
-lastWarOutDir=C\:/PittJUG Presentation/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/gwtexample
-launchConfigExternalUrlPrefix=
 warSrcDir=src/main/webapp
-warSrcDirIsOutput=false
+warSrcDirIsOutput=true
