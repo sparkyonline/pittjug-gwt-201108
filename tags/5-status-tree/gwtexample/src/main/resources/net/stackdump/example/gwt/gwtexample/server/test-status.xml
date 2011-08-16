@@ -1,0 +1,2761 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<XMLAPI VERSION="1.2.0">
+  <SECURITY>
+    <VENDORID>Company</VENDORID>
+    <APPID>Application</APPID>
+    <ORGID>StatusOrg</ORGID>
+    <USERID>StatusUser</USERID>
+    <BANKID>1234</BANKID>
+    <SESSIONID>b305f4d0-725a-11e0-b460-d2918263ca27</SESSIONID>
+  </SECURITY>
+  <MESSAGE>
+    <LOGON SCOPE="BATCH">
+      <ERROR STATE="FALSE"/>
+      <RESPONSE/>
+    </LOGON>
+  </MESSAGE>
+  <MESSAGE>
+    <SYSTEMSTATUS>
+      <ERROR STATE="FALSE"/>
+      <RESPONSE>
+        <Server id="5f754720-6e2d-11e0-b460-d2918263ca27">
+          <Name>ServerName</Name>
+          <Address>10.2.3.4</Address>
+          <Version>1.2.3.4</Version>
+          <WebContainer>Container Name &amp; Version Info</WebContainer>
+          <CreationTime>1303634597520</CreationTime>
+          <ReportTime>1304093869734</ReportTime>
+          <Config>
+            <Property dynamic="false" name="property.version" configurable="true">01.00.0000</Property>
+            <Property dynamic="true" name="property.async.enabled" configurable="true">false</Property>
+          </Config>
+          <Organizations count="58">
+            <Organization id="1">
+              <Name>APP1234</Name>
+              <Sessions count="1">
+                <Session id="93fe25c0-7233-11e0-b460-d2918263ca27">
+                  <Name>APP1234/appuser</Name>
+                  <Type>Exclusive</Type>
+                  <Status>Active</Status>
+                  <CreationTime>1304077067292</CreationTime>
+                  <LastAccessTime>1304093758707</LastAccessTime>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <Emulators count="1">
+                    <Emulator id="175901308">
+                      <System>System_6</System>
+                      <CurrentScreen>SCREEN14</CurrentScreen>
+                      <CreationTime>1304077197897</CreationTime>
+                      <LastAccessTime>1304093758719</LastAccessTime>
+                      <TerminalId>VT/0100/9876719</TerminalId>
+                      <NodeName>APP00619</NodeName>
+                      <HostId/>
+                    </Emulator>
+                  </Emulators>
+                </Session>
+              </Sessions>
+              <SessionPools count="1">
+                <SessionPool id="141822068">
+                  <Name>APP1234/appuser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>163</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="ecb24730-7258-11e0-b460-d2918263ca27">
+                      <Name>APP1234/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093107491</CreationTime>
+                      <LastAccessTime>1304093107491</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="2">
+              <Name>NVUwEE</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1772513702">
+                  <Name>NVUwfhJ/userrhEE</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>12718</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="3a49b200-6e42-11e0-b460-d2918263ca27">
+                      <Name>NVUwfhJ/userrhEE</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1303643554592</CreationTime>
+                      <LastAccessTime>1304093869327</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="1375621630">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303751887336</CreationTime>
+                          <LastAccessTime>1304093835841</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1710253552">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN07</CurrentScreen>
+                          <CreationTime>1303729722581</CreationTime>
+                          <LastAccessTime>1304093869366</LastAccessTime>
+                          <TerminalId>VT/0100/98765BB</TerminalId>
+                          <NodeName>APP004BB</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="991443736">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1303800343248</CreationTime>
+                          <LastAccessTime>1304093864685</LastAccessTime>
+                          <TerminalId>VT/0100/9876252</TerminalId>
+                          <NodeName>APP00152</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1397642062">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>13040936861DD</CreationTime>
+                          <LastAccessTime>1304093827442</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="a3d14960-725a-11e0-b460-d2918263ca27">
+                      <Name>NVUwfhJ/userrhEE</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093844214</CreationTime>
+                      <LastAccessTime>1304093844214</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1041645078">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN12</CurrentScreen>
+                          <CreationTime>1304093844226</CreationTime>
+                          <LastAccessTime>1304093844723</LastAccessTime>
+                          <TerminalId>VT/0100/9876543</TerminalId>
+                          <NodeName>APP00443</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="3">
+              <Name>DEFjBB</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1474975722">
+                  <Name>DEFjUr/userCBB</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>174</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="e84a15a0-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFjUr/userCBB</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093529594</CreationTime>
+                      <LastAccessTime>1304093529594</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="4">
+              <Name>channelapp1HH</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="664545180">
+                  <Name>channelapp185/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>22</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="3085e7e0-725a-11e0-b460-d2918263ca27">
+                      <Name>channelapp185/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093650782</CreationTime>
+                      <LastAccessTime>1304093650782</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="5">
+              <Name>VVxPBB</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1690985674">
+                  <Name>VVxPUr/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>3388</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="1b7c2ee0-7223-11e0-b460-d2918263ca27">
+                      <Name>VVxPUr/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304069993166</CreationTime>
+                      <LastAccessTime>1304093756485</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="1015561352">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304070502056</CreationTime>
+                          <LastAccessTime>1304093756573</LastAccessTime>
+                          <TerminalId>VT/0100/9876496</TerminalId>
+                          <NodeName>APP00396</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="960379198">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304070501432</CreationTime>
+                          <LastAccessTime>1304093756548</LastAccessTime>
+                          <TerminalId>VT/0100/9876493</TerminalId>
+                          <NodeName>APP00393</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="40632940">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>13040737745CC</CreationTime>
+                          <LastAccessTime>1304093756505</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="6">
+              <Name>appqDD</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1949856824">
+                  <Name>appqQr/appuserhDD</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>100</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="a486c8a0-7258-11e0-b460-d2918263ca27">
+                      <Name>appqQr/appuserhDD</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092986410</CreationTime>
+                      <LastAccessTime>1304093421832</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="2120121950">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN09</CurrentScreen>
+                          <CreationTime>1304093035993</CreationTime>
+                          <LastAccessTime>1304093421881</LastAccessTime>
+                          <TerminalId>VT/0100/9876814</TerminalId>
+                          <NodeName>APP00714</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="7">
+              <Name>DEFjEE</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1865838390">
+                  <Name>DEFjfhJ/userCEE</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>78</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="e84cfbd0-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFjfhJ/userCEE</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093529613</CreationTime>
+                      <LastAccessTime>1304093529613</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="8">
+              <Name>NVUwBB</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1700291928">
+                  <Name>NVUwUr/userrhBB</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>22278</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="3d5a7470-6e42-11e0-b460-d2918263ca27">
+                      <Name>NVUwUr/userrhBB</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1303643559735</CreationTime>
+                      <LastAccessTime>1304093852662</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="1175733780">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303730589990</CreationTime>
+                          <LastAccessTime>1304089798208</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="2135195460">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN05</CurrentScreen>
+                          <CreationTime>1303644164748</CreationTime>
+                          <LastAccessTime>1304093852722</LastAccessTime>
+                          <TerminalId>VT/0100/9876460</TerminalId>
+                          <NodeName>APP00360</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="228461982">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1303643559749</CreationTime>
+                          <LastAccessTime>1304093843289</LastAccessTime>
+                          <TerminalId>VT/0100/9876429</TerminalId>
+                          <NodeName>APP00329</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1604345760">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>1304084109760</CreationTime>
+                          <LastAccessTime>1304092193999</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="34fa2760-7259-11e0-b460-d2918263ca27">
+                      <Name>NVUwUr/userrhBB</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093228758</CreationTime>
+                      <LastAccessTime>1304093228758</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1287539902">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1304093228776</CreationTime>
+                          <LastAccessTime>1304093229369</LastAccessTime>
+                          <TerminalId>VT/0100/9876613</TerminalId>
+                          <NodeName>APP00513</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="9">
+              <Name>VVxPEE</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="968374712">
+                  <Name>VVxPfhJ/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>2080</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="ec416520-7225-11e0-b460-d2918263ca27">
+                      <Name>VVxPfhJ/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304071202418</CreationTime>
+                      <LastAccessTime>1304093768827</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="1031028084">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304071976696</CreationTime>
+                          <LastAccessTime>1304093768878</LastAccessTime>
+                          <TerminalId>VT/0100/9876585</TerminalId>
+                          <NodeName>APP004HH</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="906901006">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304071976200</CreationTime>
+                          <LastAccessTime>1304093769260</LastAccessTime>
+                          <TerminalId>VT/0100/9876583</TerminalId>
+                          <NodeName>APP00483</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="737029102">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304075651635</CreationTime>
+                          <LastAccessTime>1304093278291</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="10">
+              <Name>NVUwDD</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="92931466">
+                  <Name>NVUwQr/userrhDD</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>56023</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="4">
+                    <Session id="3fc24cb0-6e42-11e0-b460-d2918263ca27">
+                      <Name>NVUwQr/userrhDD</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1303643563771</CreationTime>
+                      <LastAccessTime>1304093865050</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="1904111998">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303733391428</CreationTime>
+                          <LastAccessTime>1304093246264</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="415111358">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN04</CurrentScreen>
+                          <CreationTime>1303729696542</CreationTime>
+                          <LastAccessTime>1304093859530</LastAccessTime>
+                          <TerminalId>VT/0100/9876486</TerminalId>
+                          <NodeName>APP00386</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="765603234">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN09</CurrentScreen>
+                          <CreationTime>1303643563789</CreationTime>
+                          <LastAccessTime>1304093865087</LastAccessTime>
+                          <TerminalId>VT/0100/9876434</TerminalId>
+                          <NodeName>APP00334</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="975452708">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>1304079046849</CreationTime>
+                          <LastAccessTime>1304093499189</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="3458f670-723a-11e0-b460-d2918263ca27">
+                      <Name>NVUwQr/userrhDD</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304079913303</CreationTime>
+                      <LastAccessTime>1304093836019</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="2110815696">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN04</CurrentScreen>
+                          <CreationTime>1304079913313</CreationTime>
+                          <LastAccessTime>1304093836043</LastAccessTime>
+                          <TerminalId>VT/0100/9876932</TerminalId>
+                          <NodeName>APP00832</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="2007398310">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN12</CurrentScreen>
+                          <CreationTime>1304082239928</CreationTime>
+                          <LastAccessTime>1304093433yzz</LastAccessTime>
+                          <TerminalId>VT/0100/9876643</TerminalId>
+                          <NodeName>APP00543</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="19086030-7259-11e0-b460-d2918263ca27">
+                      <Name>NVUwQr/userrhDD</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093181875</CreationTime>
+                      <LastAccessTime>1304093181875</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="841232932">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1304093181889</CreationTime>
+                          <LastAccessTime>1304093182552</LastAccessTime>
+                          <TerminalId>VT/0100/9876762</TerminalId>
+                          <NodeName>APP00662</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="190a8310-7259-11e0-b460-d2918263ca27">
+                      <Name>NVUwQr/userrhDD</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093181889</CreationTime>
+                      <LastAccessTime>1304093181889</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1939895200">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1304093181913</CreationTime>
+                          <LastAccessTime>1304093182607</LastAccessTime>
+                          <TerminalId>VT/0100/9876909</TerminalId>
+                          <NodeName>APP00809</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="11">
+              <Name>UBAPPyzz</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1888907414">
+                  <Name>UBAPPyzz/appyzz</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>8608</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="a8be2d60-722f-11e0-b460-d2918263ca27">
+                      <Name>UBAPPyzz/appyzz</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304075384118</CreationTime>
+                      <LastAccessTime>1304093696386</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="1653498510">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304075687340</CreationTime>
+                          <LastAccessTime>1304093695881</LastAccessTime>
+                          <TerminalId>VT/0100/9876797</TerminalId>
+                          <NodeName>APP00697</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1935831906">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304075686786</CreationTime>
+                          <LastAccessTime>1304093695750</LastAccessTime>
+                          <TerminalId>VT/0100/9876794</TerminalId>
+                          <NodeName>APP00694</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="964442492">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304077455414</CreationTime>
+                          <LastAccessTime>1304093696406</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="c74d91c0-724e-11e0-b460-d2918263ca27">
+                      <Name>UBAPPyzz/appyzz</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304088749788</CreationTime>
+                      <LastAccessTime>1304093695880</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="347870396">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304088750375</CreationTime>
+                          <LastAccessTime>1304093269069</LastAccessTime>
+                          <TerminalId>VT/0100/9876827</TerminalId>
+                          <NodeName>APP00727</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="892613940">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304088749801</CreationTime>
+                          <LastAccessTime>1304093268947</LastAccessTime>
+                          <TerminalId>VT/0100/9876180</TerminalId>
+                          <NodeName>APP00080</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="626402646">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304093695883</CreationTime>
+                          <LastAccessTime>1304093696166</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="12">
+              <Name>NVUwHH</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="184421118">
+                  <Name>NVUw85/userrhHH</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>110CC</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="2f11e140-6e43-11e0-b460-d2918263ca27">
+                      <Name>NVUw85/userrhHH</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>13036439652EE</CreationTime>
+                      <LastAccessTime>1304093826197</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="1794665208">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303746123607</CreationTime>
+                          <LastAccessTime>1304091849023</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1088569570">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN05</CurrentScreen>
+                          <CreationTime>13037315260CC</CreationTime>
+                          <LastAccessTime>1304093624056</LastAccessTime>
+                          <TerminalId>VT/0100/9876647</TerminalId>
+                          <NodeName>APP00547</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="655501074">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1303643965283</CreationTime>
+                          <LastAccessTime>1304093826240</LastAccessTime>
+                          <TerminalId>VT/0100/9876454</TerminalId>
+                          <NodeName>APP00354</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1924952764">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>1304083019270</CreationTime>
+                          <LastAccessTime>1304092476334</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="13">
+              <Name>appq80</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="88999246">
+                  <Name>appqHJN/appuserh80</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>17</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="34923dd0-7259-11e0-b460-d2918263ca27">
+                      <Name>appqHJN/appuserh80</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093228077</CreationTime>
+                      <LastAccessTime>1304093228077</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="14">
+              <Name>VVxPFF</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="790245146">
+                  <Name>VVxPMd/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>469</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="54833100-7257-11e0-b460-d2918263ca27">
+                      <Name>VVxPMd/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092422672</CreationTime>
+                      <LastAccessTime>1304093557626</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="2032564518">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304093274443</CreationTime>
+                          <LastAccessTime>1304093557676</LastAccessTime>
+                          <TerminalId>VT/0100/9876923</TerminalId>
+                          <NodeName>APP00823</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="160958872">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304093273895</CreationTime>
+                          <LastAccessTime>1304093557663</LastAccessTime>
+                          <TerminalId>VT/0100/9876920</TerminalId>
+                          <NodeName>APP00820</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="15">
+              <Name>VVxP80</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1173636596">
+                  <Name>VVxPHJN/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>267</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c8dd9c10-7258-11e0-b460-d2918263ca27">
+                      <Name>VVxPHJN/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093047377</CreationTime>
+                      <LastAccessTime>1304093047377</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="16">
+              <Name>Vuyqbe456</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1242843668">
+                  <Name>Vuyqbe456/appuser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>54</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="308b6620-725a-11e0-b460-d2918263ca27">
+                      <Name>Vuyqbe456/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093650818</CreationTime>
+                      <LastAccessTime>1304093650818</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="17">
+              <Name>VendorGYR</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1006255098">
+                  <Name>VendorGYR/appuser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>51</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="546122b0-725a-11e0-b460-d2918263ca27">
+                      <Name>VendorGYR/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093710939</CreationTime>
+                      <LastAccessTime>1304093710939</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="18">
+              <Name>VENDOR</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1050951332">
+                  <Name>VENDOR/appuser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>795</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="37f05260-7258-11e0-b460-d2918263ca27">
+                      <Name>VENDOR/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092804230</CreationTime>
+                      <LastAccessTime>1304093154652</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="1813933086">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304092838917</CreationTime>
+                          <LastAccessTime>1304092950882</LastAccessTime>
+                          <TerminalId>VT/0100/9876676</TerminalId>
+                          <NodeName>APP00576</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1794140912">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN19</CurrentScreen>
+                          <CreationTime>1304092838349</CreationTime>
+                          <LastAccessTime>1304093154905</LastAccessTime>
+                          <TerminalId>VT/0100/9876631</TerminalId>
+                          <NodeName>APP00531</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="19">
+              <Name>XYZ</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1420580012">
+                  <Name>XYZ/user2</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>1411</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="f123cdc0-723a-11e0-b460-d2918263ca27">
+                      <Name>XYZ/user2</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304080230044</CreationTime>
+                      <LastAccessTime>1304093820660</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1127891770">
+                          <System>System_3</System>
+                          <CurrentScreen>SCREEN18</CurrentScreen>
+                          <CreationTime>1304080641612</CreationTime>
+                          <LastAccessTime>1304093820882</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="20">
+              <Name>channelapp1BB</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="357569872">
+                  <Name>channelapp1Ur/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>26</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="3495c040-7259-11e0-b460-d2918263ca27">
+                      <Name>channelapp1Ur/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093228100</CreationTime>
+                      <LastAccessTime>1304093775292</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1150567572">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN06</CurrentScreen>
+                          <CreationTime>1304093775299</CreationTime>
+                          <LastAccessTime>1304093775888</LastAccessTime>
+                          <TerminalId>VT/0100/9876123</TerminalId>
+                          <NodeName>APP00023</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="21">
+              <Name>applive</Name>
+              <Sessions count="0"/>
+              <SessionPools count="4">
+                <SessionPool id="1632395596">
+                  <Name>applive/userzzz</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>1</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="34979500-7259-11e0-b460-d2918263ca27">
+                      <Name>applive/userzzz</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093228112</CreationTime>
+                      <LastAccessTime>1304093228112</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+                <SessionPool id="2046458362">
+                  <Name>applive/useryyy</Name>
+                  <MaxSize>25</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>687</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="54c16b20-725a-11e0-b460-d2918263ca27">
+                      <Name>applive/useryyy</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093711570</CreationTime>
+                      <LastAccessTime>1304093711570</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+                <SessionPool id="1428706600">
+                  <Name>applive/appdemo</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>5</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="58fd5c90-7259-11e0-b460-d2918263ca27">
+                      <Name>applive/appdemo</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093289177</CreationTime>
+                      <LastAccessTime>1304093289177</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+                <SessionPool id="1662542616">
+                  <Name>applive/appuser</Name>
+                  <MaxSize>21</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>10</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="7cd69b90-7259-11e0-b460-d2918263ca27">
+                      <Name>applive/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093349321</CreationTime>
+                      <LastAccessTime>1304093349321</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="22">
+              <Name>channelapp1EE</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="598221736">
+                  <Name>channelapp1fhJ/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>42</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="7cced360-7259-11e0-b460-d2918263ca27">
+                      <Name>channelapp1fhJ/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093349270</CreationTime>
+                      <LastAccessTime>1304093349270</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="23">
+              <Name>channelapp180</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1445352998">
+                  <Name>channelapp1HJN/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>15</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="9c983a00-725a-11e0-b460-d2918263ca27">
+                      <Name>channelapp1HJN/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093832096</CreationTime>
+                      <LastAccessTime>1304093832096</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="24">
+              <Name>VY87465</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1230653786">
+                  <Name>VY87465/appuser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>2356</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="79731020-7257-11e0-b460-d2918263ca27">
+                      <Name>VY87465/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092484642</CreationTime>
+                      <LastAccessTime>1304093566141</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="853553888">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1304092792542</CreationTime>
+                          <LastAccessTime>1304092793107</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1562008858">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304093206328</CreationTime>
+                          <LastAccessTime>1304093566177</LastAccessTime>
+                          <TerminalId>VT/0100/9876373</TerminalId>
+                          <NodeName>APP00273</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="198314962">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304092793111</CreationTime>
+                          <LastAccessTime>1304092793421</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="5022d230-7259-11e0-b460-d2918263ca27">
+                      <Name>VY87465/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093274323</CreationTime>
+                      <LastAccessTime>1304093274323</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1570397594">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304093274333</CreationTime>
+                          <LastAccessTime>1304093274894</LastAccessTime>
+                          <TerminalId>VT/0100/9876921</TerminalId>
+                          <NodeName>APP00821</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="25">
+              <Name>VVxPCC</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1222396124">
+                  <Name>VVxPyI/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>5245</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="a0281520-7226-11e0-b460-d2918263ca27">
+                      <Name>VVxPyI/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304071504242</CreationTime>
+                      <LastAccessTime>1304093864574</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="2037938552">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304071512249</CreationTime>
+                          <LastAccessTime>1304093864623</LastAccessTime>
+                          <TerminalId>VT/0100/9876507</TerminalId>
+                          <NodeName>APP00407</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1325551362">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304071511642</CreationTime>
+                          <LastAccessTime>13040938691BB</LastAccessTime>
+                          <TerminalId>VT/0100/9876505</TerminalId>
+                          <NodeName>APP00405</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1445352998">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304071511314</CreationTime>
+                          <LastAccessTime>1304093104690</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="70e92be0-7259-11e0-b460-d2918263ca27">
+                      <Name>VVxPyI/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093329310</CreationTime>
+                      <LastAccessTime>1304093866825</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="39453274">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304093329876</CreationTime>
+                          <LastAccessTime>1304093867073</LastAccessTime>
+                          <TerminalId>VT/0100/98769CC</TerminalId>
+                          <NodeName>APP008CC</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1374966260">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304093329320</CreationTime>
+                          <LastAccessTime>1304093869211</LastAccessTime>
+                          <TerminalId>VT/0100/9876946</TerminalId>
+                          <NodeName>APP00846</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="26">
+              <Name>pt6789</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="479861914">
+                  <Name>pt6789/Rvuser592</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>14</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="a0a52c30-7259-11e0-b460-d2918263ca27">
+                      <Name>pt6789/Rvuser592</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093409395</CreationTime>
+                      <LastAccessTime>1304093409395</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="27">
+              <Name>NVUw80</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="629941644">
+                  <Name>NVUwHJN/userrh80</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>8481</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="40f9bb40-6e42-11e0-b460-d2918263ca27">
+                      <Name>NVUwHJN/userrh80</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1303643565812</CreationTime>
+                      <LastAccessTime>1304093865306</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="291377502">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303743731060</CreationTime>
+                          <LastAccessTime>1304019381704</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="766651826">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN05</CurrentScreen>
+                          <CreationTime>1303732736765</CreationTime>
+                          <LastAccessTime>1304093865330</LastAccessTime>
+                          <TerminalId>VT/0100/98767CC</TerminalId>
+                          <NodeName>APP006CC</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1303006634">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN09</CurrentScreen>
+                          <CreationTime>1303643565826</CreationTime>
+                          <LastAccessTime>1304093775574</LastAccessTime>
+                          <TerminalId>VT/0100/98764BB</TerminalId>
+                          <NodeName>APP003BB</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="782642854">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>13040075701DD</CreationTime>
+                          <LastAccessTime>1304020162632</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="28">
+              <Name>DEFj80</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="2135457608">
+                  <Name>DEFjHJN/userC80</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>18</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c4778d60-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFjHJN/userC80</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093469494</CreationTime>
+                      <LastAccessTime>1304093469494</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="29">
+              <Name>pt5678</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="871773174">
+                  <Name>pt5678/Rvuser531</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>216</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="9c9b4740-725a-11e0-b460-d2918263ca27">
+                      <Name>pt5678/Rvuser531</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093832116</CreationTime>
+                      <LastAccessTime>1304093832116</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="30">
+              <Name>pt1234</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="799813548">
+                  <Name>pt1234/appuserh69</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>438</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="9c9d1c00-725a-11e0-b460-d2918263ca27">
+                      <Name>pt1234/appuserh69</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093832128</CreationTime>
+                      <LastAccessTime>1304093832128</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="31">
+              <Name>AmBCAPP</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="591405888">
+                  <Name>AmBCAPP/appuser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>1267</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="349c4ff0-7259-11e0-b460-d2918263ca27">
+                      <Name>AmBCAPP/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093228143</CreationTime>
+                      <LastAccessTime>1304093791459</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="443161194">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304093321524</CreationTime>
+                          <LastAccessTime>1304093791613</LastAccessTime>
+                          <TerminalId>VT/0100/9876928</TerminalId>
+                          <NodeName>APP00828</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="46531270">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304093320841</CreationTime>
+                          <LastAccessTime>1304093791459</LastAccessTime>
+                          <TerminalId>VT/0100/9876575</TerminalId>
+                          <NodeName>APP00475</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="6c77c800-7259-11e0-b460-d2918263ca27">
+                      <Name>AmBCAPP/appuser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093321856</CreationTime>
+                      <LastAccessTime>13040937146EE</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="1019755720">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304093322371</CreationTime>
+                          <LastAccessTime>1304093714826</LastAccessTime>
+                          <TerminalId>VT/0100/9876931</TerminalId>
+                          <NodeName>APP00831</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="301470200">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304093321866</CreationTime>
+                          <LastAccessTime>1304093714704</LastAccessTime>
+                          <TerminalId>VT/0100/9876929</TerminalId>
+                          <NodeName>APP00829</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="32">
+              <Name>appqCC</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="429660572">
+                  <Name>appqyI/appuserhCC</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>16</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="30909640-725a-11e0-b460-d2918263ca27">
+                      <Name>appqyI/appuserhCC</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093650852</CreationTime>
+                      <LastAccessTime>1304093650852</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="33">
+              <Name>appqFF</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1045053002">
+                  <Name>appqMd/appuserhFF</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>5</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="54bed310-725a-11e0-b460-d2918263ca27">
+                      <Name>appqMd/appuserhFF</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>13040937115CC</CreationTime>
+                      <LastAccessTime>13040937115CC</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="34">
+              <Name>pt2345</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1968469332">
+                  <Name>pt2345/Rvuser260</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>9</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="78c71150-725a-11e0-b460-d2918263ca27">
+                      <Name>pt2345/Rvuser260</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093772005</CreationTime>
+                      <LastAccessTime>1304093772005</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="35">
+              <Name>pt3456</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="726936404">
+                  <Name>pt3456/Rvuser342</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>902</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="7cd3b560-7259-11e0-b460-d2918263ca27">
+                      <Name>pt3456/Rvuser342</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093349302</CreationTime>
+                      <LastAccessTime>1304093349302</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="36">
+              <Name>VVxPDD</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1261456176">
+                  <Name>VVxPQr/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>10784</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="3">
+                    <Session id="f4dd39d0-721a-11e0-b460-d2918263ca27">
+                      <Name>VVxPQr/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304066492397</CreationTime>
+                      <LastAccessTime>1304093859389</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="1901359444">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304066707524</CreationTime>
+                          <LastAccessTime>1304093859523</LastAccessTime>
+                          <TerminalId>VT/0100/9876205</TerminalId>
+                          <NodeName>APP00105</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1711433218">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304066706927</CreationTime>
+                          <LastAccessTime>1304093859512</LastAccessTime>
+                          <TerminalId>VT/0100/9876161</TerminalId>
+                          <NodeName>APP00061</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1932030760">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304066824129</CreationTime>
+                          <LastAccessTime>1304093837398</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="06d29f30-7258-11e0-b460-d2918263ca27">
+                      <Name>VVxPQr/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092721827</CreationTime>
+                      <LastAccessTime>1304093744913</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="2143846yzz">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304093744955</CreationTime>
+                          <LastAccessTime>1304093745563</LastAccessTime>
+                          <TerminalId>VT/0100/9876883</TerminalId>
+                          <NodeName>APP00783</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1365791080">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304092721845</CreationTime>
+                          <LastAccessTime>1304093746288</LastAccessTime>
+                          <TerminalId>VT/0100/9876896</TerminalId>
+                          <NodeName>APP00796</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="a12e9cf0-7258-11e0-b460-d2918263ca27">
+                      <Name>VVxPQr/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092980799</CreationTime>
+                      <LastAccessTime>1304092980799</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="982399630">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304092981436</CreationTime>
+                          <LastAccessTime>1304092982177</LastAccessTime>
+                          <TerminalId>VT/0100/9876705</TerminalId>
+                          <NodeName>APP00605</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1189496550">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304092980811</CreationTime>
+                          <LastAccessTime>1304092982849</LastAccessTime>
+                          <TerminalId>VT/0100/9876159</TerminalId>
+                          <NodeName>APP00059</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="37">
+              <Name>AB9876</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="777137746">
+                  <Name>AB9876/ABouYR</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>562</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="34f6efe0-7255-11e0-b460-d2918263ca27">
+                      <Name>AB9876/ABouYR</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304091510750</CreationTime>
+                      <LastAccessTime>1304092933997</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="127010706">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>13040920932BB</CreationTime>
+                          <LastAccessTime>1304092934054</LastAccessTime>
+                          <TerminalId>VT/0100/9876943</TerminalId>
+                          <NodeName>APP00843</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="626009424">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304092092681</CreationTime>
+                          <LastAccessTime>1304092936872</LastAccessTime>
+                          <TerminalId>VT/0100/9876852</TerminalId>
+                          <NodeName>APP00752</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="38">
+              <Name>appyzz</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="454302484">
+                  <Name>appyzz/Rvuseryzz</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>618</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="3e1616a0-7250-11e0-b460-d2918263ca27">
+                      <Name>appyzz/Rvuseryzz</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304089378570</CreationTime>
+                      <LastAccessTime>1304093710276</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="407902288">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN11</CurrentScreen>
+                          <CreationTime>1304089556469</CreationTime>
+                          <LastAccessTime>1304090731680</LastAccessTime>
+                          <TerminalId>VT/0100/9876304</TerminalId>
+                          <NodeName>APP00204</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="989215478">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN10</CurrentScreen>
+                          <CreationTime>1304089548575</CreationTime>
+                          <LastAccessTime>1304093710329</LastAccessTime>
+                          <TerminalId>VT/0100/9876764</TerminalId>
+                          <NodeName>APP00664</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="606217250">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN20</CurrentScreen>
+                          <CreationTime>1304089834778</CreationTime>
+                          <LastAccessTime>1304093564595</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="39">
+              <Name>Org5678</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1771858332">
+                  <Name>Org5678/appuser50</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>320</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="0c30e930-725a-11e0-b460-d2918263ca27">
+                      <Name>Org5678/appuser50</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093589827</CreationTime>
+                      <LastAccessTime>1304093793030</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="2067430202">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN19</CurrentScreen>
+                          <CreationTime>1304093793036</CreationTime>
+                          <LastAccessTime>1304093793841</LastAccessTime>
+                          <TerminalId>VT/0100/9876546</TerminalId>
+                          <NodeName>APP00446</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="40">
+              <Name>channelapp1DD</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1582980698">
+                  <Name>channelapp1Qr/m157c02</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>182</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c80c0d80-7253-11e0-b460-d2918263ca27">
+                      <Name>channelapp1Qr/m157c02</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304090898520</CreationTime>
+                      <LastAccessTime>1304092993056</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1278102574">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN06</CurrentScreen>
+                          <CreationTime>1304091486175</CreationTime>
+                          <LastAccessTime>1304092993154</LastAccessTime>
+                          <TerminalId>VT/0100/9876841</TerminalId>
+                          <NodeName>APP00741</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="41">
+              <Name>VVxPHH</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1846701586">
+                  <Name>VVxP85/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>3001</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="0c953170-7227-11e0-b460-d2918263ca27">
+                      <Name>VVxP85/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304071686151</CreationTime>
+                      <LastAccessTime>1304093803556</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="981088890">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304071801107</CreationTime>
+                          <LastAccessTime>1304093803600</LastAccessTime>
+                          <TerminalId>VT/0100/9876545</TerminalId>
+                          <NodeName>APP00445</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="922236664">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN15</CurrentScreen>
+                          <CreationTime>1304071800374</CreationTime>
+                          <LastAccessTime>1304093803943</LastAccessTime>
+                          <TerminalId>VT/0100/9876528</TerminalId>
+                          <NodeName>APP00428</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="190319448">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304076677238</CreationTime>
+                          <LastAccessTime>130409yzz4109</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="42">
+              <Name>DEFjFF</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1353076902">
+                  <Name>DEFjMd/userCFF</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>17</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c47c9670-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFjMd/userCFF</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093469527</CreationTime>
+                      <LastAccessTime>1304093469527</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="43">
+              <Name>NVUwFF</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="2046851584">
+                  <Name>NVUwMd/userrhFF</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>9623</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="3ad09540-6e42-11e0-b460-d2918263ca27">
+                      <Name>NVUwMd/userrhFF</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1303643555476</CreationTime>
+                      <LastAccessTime>1304093816439</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="925513514">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303759165230</CreationTime>
+                          <LastAccessTime>1304005540561</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1127236400">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN03</CurrentScreen>
+                          <CreationTime>1303732866799</CreationTime>
+                          <LastAccessTime>1304093803485</LastAccessTime>
+                          <TerminalId>VT/0100/9876773</TerminalId>
+                          <NodeName>APP00673</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="573317676">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN12</CurrentScreen>
+                          <CreationTime>1303643555491</CreationTime>
+                          <LastAccessTime>1304093816483</LastAccessTime>
+                          <TerminalId>VT/0100/9876426</TerminalId>
+                          <NodeName>APP00326</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="112199yzz">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>1304080547190</CreationTime>
+                          <LastAccessTime>1304089993249</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="44">
+              <Name>MyApp</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1195001658">
+                  <Name>MyApp/asdfkuij</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>6251</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="fab86d70-7247-11e0-b460-d2918263ca27">
+                      <Name>MyApp/asdfkuij</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304085829575</CreationTime>
+                      <LastAccessTime>13040938217CC</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1929540354">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN01</CurrentScreen>
+                          <CreationTime>1304086109133</CreationTime>
+                          <LastAccessTime>1304093822036</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="354ccd80-7254-11e0-b460-d2918263ca27">
+                      <Name>MyApp/asdfkuij</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304091081816</CreationTime>
+                      <LastAccessTime>1304093314711</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="1180976740">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN01</CurrentScreen>
+                          <CreationTime>1304091081835</CreationTime>
+                          <LastAccessTime>1304093315532</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="45">
+              <Name>appsupport</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="337646624">
+                  <Name>appsupport/appsupport</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>1992</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c0ae9390-720e-11e0-b460-d2918263ca27">
+                      <Name>appsupport/appsupport</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304061250889</CreationTime>
+                      <LastAccessTime>1304093450841</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="46">
+              <Name>channelapp1CC</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1147028574">
+                  <Name>channelapp1yI/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>51</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c8e711f0-7258-11e0-b460-d2918263ca27">
+                      <Name>channelapp1yI/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093047439</CreationTime>
+                      <LastAccessTime>1304093047439</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="47">
+              <Name>appqBB</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1320570550">
+                  <Name>appqUr/appuserhBB</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>26</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="3095ed70-725a-11e0-b460-d2918263ca27">
+                      <Name>appqUr/appuserhBB</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093650887</CreationTime>
+                      <LastAccessTime>1304093650887</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="48">
+              <Name>NVUwCC</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1703568778">
+                  <Name>NVUwyI/userrhCC</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>18103</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="3f50c630-6e42-11e0-b460-d2918263ca27">
+                      <Name>NVUwyI/userrhCC</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1303643563027</CreationTime>
+                      <LastAccessTime>1304093859496</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="4">
+                        <Emulator id="675424322">
+                          <System>System_2</System>
+                          <CurrentScreen>SCREEN21</CurrentScreen>
+                          <CreationTime>1303743287126</CreationTime>
+                          <LastAccessTime>1304012862660</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="802959324">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN04</CurrentScreen>
+                          <CreationTime>1303727332977</CreationTime>
+                          <LastAccessTime>1304093791148</LastAccessTime>
+                          <TerminalId>VT/0100/9876442</TerminalId>
+                          <NodeName>APP00342</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="235539978">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN09</CurrentScreen>
+                          <CreationTime>1303643563041</CreationTime>
+                          <LastAccessTime>1304093864662</LastAccessTime>
+                          <TerminalId>VT/0100/9876433</TerminalId>
+                          <NodeName>APP00333</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="539500584">
+                          <System>System_5</System>
+                          <CurrentScreen>SCREEN02</CurrentScreen>
+                          <CreationTime>1304080228358</CreationTime>
+                          <LastAccessTime>1304092488751</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="9c0cf150-7257-11e0-b460-d2918263ca27">
+                      <Name>NVUwyI/userrhCC</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304092542693</CreationTime>
+                      <LastAccessTime>1304093251861</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="2">
+                        <Emulator id="1410880536">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304093078533</CreationTime>
+                          <LastAccessTime>1304093251874</LastAccessTime>
+                          <TerminalId>VT/0100/9876523</TerminalId>
+                          <NodeName>APP00423</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="899823010">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN08</CurrentScreen>
+                          <CreationTime>1304092542772</CreationTime>
+                          <LastAccessTime>1304092880280</LastAccessTime>
+                          <TerminalId>VT/0100/9876865</TerminalId>
+                          <NodeName>APP00765</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="49">
+              <Name>VAPP79s</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1189889772">
+                  <Name>VAPP79s/invyt6qqlive</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>388</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="59028cb0-7259-11e0-b460-d2918263ca27">
+                      <Name>VAPP79s/invyt6qqlive</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093289211</CreationTime>
+                      <LastAccessTime>1304093692518</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="1">
+                        <Emulator id="206310476">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN19</CurrentScreen>
+                          <CreationTime>1304093692523</CreationTime>
+                          <LastAccessTime>1304093693302</LastAccessTime>
+                          <TerminalId>VT/0100/98765FF</TerminalId>
+                          <NodeName>APP004FF</NodeName>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="50">
+              <Name>UBORG987</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1474844648">
+                  <Name>UBORG987/org987</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>10517</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="2">
+                    <Session id="cca09420-722f-11e0-b460-d2918263ca27">
+                      <Name>UBORG987/org987</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304075444322</CreationTime>
+                      <LastAccessTime>1304093765009</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="2031515926">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304089877455</CreationTime>
+                          <LastAccessTime>1304093764986</LastAccessTime>
+                          <TerminalId>VT/0100/9876527</TerminalId>
+                          <NodeName>APP00427</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="512761488">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304075715930</CreationTime>
+                          <LastAccessTime>1304093764861</LastAccessTime>
+                          <TerminalId>VT/0100/9876254</TerminalId>
+                          <NodeName>APP00154</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="874263580">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304076199947</CreationTime>
+                          <LastAccessTime>1304093765025</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                    <Session id="4633dc50-7232-11e0-b460-d2918263ca27">
+                      <Name>UBORG987/org987</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304076507285</CreationTime>
+                      <LastAccessTime>1304093730669</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="3">
+                        <Emulator id="580526746">
+                          <System>System_6</System>
+                          <CurrentScreen>SCREEN14</CurrentScreen>
+                          <CreationTime>1304076507807</CreationTime>
+                          <LastAccessTime>1304093629259</LastAccessTime>
+                          <TerminalId>VT/0100/9876641</TerminalId>
+                          <NodeName>APP00541</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="1862823688">
+                          <System>System_4</System>
+                          <CurrentScreen>SCREEN17</CurrentScreen>
+                          <CreationTime>1304076507298</CreationTime>
+                          <LastAccessTime>1304093629128</LastAccessTime>
+                          <TerminalId>VT/0100/9876635</TerminalId>
+                          <NodeName>APP00535</NodeName>
+                          <HostId/>
+                        </Emulator>
+                        <Emulator id="265555924">
+                          <System>System_1</System>
+                          <CurrentScreen>SCREEN13</CurrentScreen>
+                          <CreationTime>1304077717699</CreationTime>
+                          <LastAccessTime>1304093733934</LastAccessTime>
+                          <TerminalId/>
+                          <NodeName/>
+                          <HostId/>
+                        </Emulator>
+                      </Emulators>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="51">
+              <Name>appqHH</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="329388962">
+                  <Name>appq85/appuserhHH</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>10</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="352b2270-7259-11e0-b460-d2918263ca27">
+                      <Name>appq85/appuserhHH</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>13040932290FF</CreationTime>
+                      <LastAccessTime>13040932290FF</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="52">
+              <Name>appqEE</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1210206242">
+                  <Name>appqfhJ/appuserhEE</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>17</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="ecbcce80-7258-11e0-b460-d2918263ca27">
+                      <Name>appqfhJ/appuserhEE</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093107560</CreationTime>
+                      <LastAccessTime>1304093107560</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="53">
+              <Name>channelapp1FF</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="856175368">
+                  <Name>channelapp1Md/otheruser</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>11</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="10c6e180-7259-11e0-b460-d2918263ca27">
+                      <Name>channelapp1Md/otheruser</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093168024</CreationTime>
+                      <LastAccessTime>1304093168024</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="54">
+              <Name>DEFjHH</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1158825234">
+                  <Name>DEFj85/userCHH</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>82</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c4812a50-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFj85/userCHH</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>13040934695DD</CreationTime>
+                      <LastAccessTime>13040934695DD</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="55">
+              <Name>appmon</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="1159087382">
+                  <Name>appmon/refreshsession</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>1</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="b305f4d0-725a-11e0-b460-d2918263ca27">
+                      <Name>appmon/refreshsession</Name>
+                      <Type>Pooled</Type>
+                      <Status>Active</Status>
+                      <CreationTime>1304093869725</CreationTime>
+                      <LastAccessTime>1304093869731</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="56">
+              <Name>pt4567</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="788016888">
+                  <Name>pt4567/Rvuseryzz</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>1464</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="78cd79f0-725a-11e0-b460-d2918263ca27">
+                      <Name>pt4567/Rvuseryzz</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093772047</CreationTime>
+                      <LastAccessTime>1304093772047</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="57">
+              <Name>DEFjDD</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="785788630">
+                  <Name>DEFjQr/userCDD</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>439</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="e85a4240-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFjQr/userCDD</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093529700</CreationTime>
+                      <LastAccessTime>1304093529700</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+            <Organization id="58">
+              <Name>DEFjCC</Name>
+              <Sessions count="0"/>
+              <SessionPools count="1">
+                <SessionPool id="381818562">
+                  <Name>DEFjyI/userCCC</Name>
+                  <MaxSize>20</MaxSize>
+                  <MinSize>1</MinSize>
+                  <InactivityTimeout>15</InactivityTimeout>
+                  <NumWaiters>0</NumWaiters>
+                  <TotalWaiters>0</TotalWaiters>
+                  <MaxWaitTime>30000</MaxWaitTime>
+                  <TotalThreads>121</TotalThreads>
+                  <AverageWaitTime>0</AverageWaitTime>
+                  <Sessions count="1">
+                    <Session id="c4837440-7259-11e0-b460-d2918263ca27">
+                      <Name>DEFjyI/userCCC</Name>
+                      <Type>Pooled</Type>
+                      <Status>Available</Status>
+                      <CreationTime>1304093469572</CreationTime>
+                      <LastAccessTime>1304093469572</LastAccessTime>
+                      <InactivityTimeout>15</InactivityTimeout>
+                      <Emulators count="0"/>
+                    </Session>
+                  </Sessions>
+                </SessionPool>
+              </SessionPools>
+            </Organization>
+          </Organizations>
+        </Server>
+      </RESPONSE>
+    </SYSTEMSTATUS>
+  </MESSAGE>
+</XMLAPI>

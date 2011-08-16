@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+  http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>net.stackdump.example.gwt.gwtexample.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/GWTExample/greet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>GWTExample.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>StatusService</servlet-name>
+  	<servlet-class>net.stackdump.example.gwt.gwtexample.server.StatusServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StatusService</servlet-name>
+  	<url-pattern>/GWTExample/StatusService</url-pattern>
+  </servlet-mapping>
+
+</web-app>
