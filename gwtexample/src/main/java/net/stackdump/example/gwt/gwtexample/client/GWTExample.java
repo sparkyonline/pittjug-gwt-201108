@@ -1,39 +1,25 @@
 package net.stackdump.example.gwt.gwtexample.client;
 
 import static com.google.gwt.dom.client.Style.Unit.PX;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import net.stackdump.example.gwt.gwtexample.shared.data.Emulator;
 import net.stackdump.example.gwt.gwtexample.shared.data.Environment;
-import net.stackdump.example.gwt.gwtexample.shared.data.Instance;
-import net.stackdump.example.gwt.gwtexample.shared.data.InstanceIdentifier;
-import net.stackdump.example.gwt.gwtexample.shared.data.Organization;
-import net.stackdump.example.gwt.gwtexample.shared.data.Session;
-import net.stackdump.example.gwt.gwtexample.shared.data.SessionPool;
-import net.stackdump.example.gwt.gwtexample.shared.data.SessionType;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
-import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.ScrollPanel;
-import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.google.gwt.view.client.ListDataProvider;
-import net.stackdump.example.gwt.gwtexample.client.tree.EmulatorTree;
+import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.TabLayoutPanel;
+import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.ClickEvent;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -58,26 +44,6 @@ public class GWTExample implements EntryPoint {
   private final StatusServiceAsync statusService = GWT.create(StatusService.class);
 
   private final Messages messages = GWT.create(Messages.class);
-  
-  /**
-   * List that will provide information about an emulator.
-   */
-  private final ListDataProvider<EmulatorRecord> emuList = new ListDataProvider<EmulatorRecord>(
-      EmulatorRecord.KEY_PROVIDER);
-  
-  /**
-   * The list of emulator records, as parsed from the response.
-   */
-  private List<EmulatorRecord> origEmuList;
-  
-  /**
-   * The most recently obtained environment status information.
-   */
-  private Environment environment;
-
-  private EmulatorTable emulatorTable;
-
-  private EmulatorTree emulatorTree;
 
   /**
    * This is the entry point method.
@@ -106,7 +72,7 @@ public class GWTExample implements EntryPoint {
           @Override
           public void onSuccess(final Environment env)
           {
-            updateEmulators(env);
+            Object o = env.getMap();
           }
           
           @Override
@@ -120,13 +86,6 @@ public class GWTExample implements EntryPoint {
     toolbarPanel.add(getStatusButton);
     
     Button clearButton = new Button(messages.clearButton());
-    clearButton.addClickHandler(new ClickHandler() {
-      public void onClick(ClickEvent event) {
-        origEmuList.clear();
-        resetList();
-        emulatorTree.clear();
-      }
-    });
     toolbarPanel.add(clearButton);
     
     TabLayoutPanel tabPanel = new TabLayoutPanel(1.5, Unit.EM);
@@ -134,24 +93,8 @@ public class GWTExample implements EntryPoint {
     SimplePanel tablePanel = new SimplePanel();
     tabPanel.add(tablePanel, messages.tableTab(), false);
     
-    ScrollPanel tableScrollPanel = new ScrollPanel();
-    tablePanel.setWidget(tableScrollPanel);
-    tableScrollPanel.setSize("100%", "100%");
-    
-    emulatorTable = new EmulatorTable(emuList);
-    tableScrollPanel.setWidget(emulatorTable);
-    emulatorTable.setSize("100%", "100%");
-    
     SimplePanel treePanel = new SimplePanel();
     tabPanel.add(treePanel, messages.treeTab(), false);
-    
-    ScrollPanel treeScrollPanel = new ScrollPanel();
-    treePanel.setWidget(treeScrollPanel);
-    treeScrollPanel.setSize("100%", "100%");
-    
-    emulatorTree = new EmulatorTree();
-    treeScrollPanel.setWidget(emulatorTree);
-    emulatorTree.setSize("100%", "100%");
     mainPanel.add(tabPanel);
     Window.addResizeHandler(new ResizeHandler() {
       @Override
@@ -162,109 +105,5 @@ public class GWTExample implements EntryPoint {
     });
     RootLayoutPanel.get().clear();
     RootLayoutPanel.get().add(resizePanel);
-  }
-  
-  /**
-   * Uses the response to update the UI.
-   * 
-   * @param env The retrieved environment status information.
-   */
-  private void updateEmulators(final Environment env)
-  {
-    final List<EmulatorRecord> records = new ArrayList<EmulatorRecord>();
-    
-    String host;
-    String instanceName;
-    String orgName;
-    String sessionName;
-    SessionType sessionType;
-    String emuSystem;
-    String emuCurrentScreen;
-    
-    InstanceIdentifier id;
-    Instance instance;
-    EmulatorRecord record;
-    
-    int nextID = 0;
-    for (Map.Entry<InstanceIdentifier, Instance> envEntry : env.entrySet())
-    {
-        id = envEntry.getKey();
-        host = id.getHost();
-        instanceName = id.getInstance();
-        instance = envEntry.getValue();
-        
-        for (Organization org : instance.getOrganizations())
-        {
-            orgName = org.getName();
-            
-            for (Session session : org.getSessions())
-            {
-                sessionName = session.getName();
-                sessionType = session.getType();
-                for (Emulator emu : session.getEmulators())
-                {
-                    emuSystem = emu.getSystem();
-                    emuCurrentScreen = emu.getCurrentScreen();
-                    
-                    record = new EmulatorRecord();
-                    record.setID(nextID++);
-                    record.setHost(host);
-                    record.setInstanceName(instanceName);
-                    record.setOrgName(orgName);
-                    record.setSessionName(sessionName);
-                    record.setSessionType(sessionType);
-                    record.setEmuSystem(emuSystem);
-                    record.setEmuCurrentScreen(emuCurrentScreen);
-                    
-                    records.add(record);
-                }
-            }
-            
-            for (SessionPool pool : org.getSessionPools())
-            {
-                for (Session session : pool.getSessions())
-                {
-                    sessionName = session.getName();
-                    sessionType = session.getType();
-                    for (Emulator emu : session.getEmulators())
-                    {
-                        emuSystem = emu.getSystem();
-                        emuCurrentScreen = emu.getCurrentScreen();
-                        
-                        record = new EmulatorRecord();
-                        record.setID(nextID++);
-                        record.setHost(host);
-                        record.setInstanceName(instanceName);
-                        record.setOrgName(orgName);
-                        record.setSessionName(sessionName);
-                        record.setSessionType(sessionType);
-                        record.setEmuSystem(emuSystem);
-                        record.setEmuCurrentScreen(emuCurrentScreen);
-                        
-                        records.add(record);
-                    }
-                }
-            }
-        }
-    }
-    
-    origEmuList = records;
-    environment = env;
-    resetList();
-  }
-  
-  /**
-   * Resets the displayed information.
-   */
-  private void resetList()
-  {
-    if (origEmuList != null)
-    {
-      emuList.getList().clear();
-      emulatorTable.getTable().getColumnSortList().clear();
-      emuList.getList().addAll(origEmuList);
-      emulatorTable.getTable().setVisibleRange(0, origEmuList.size());
-      emulatorTree.updateTree(environment);
-    }
   }
 }

@@ -43,8 +43,6 @@ public class InstanceStatusRetriever
         sessionTypeLookup = Collections.unmodifiableMap(map);
     }
     
-    private static final Document doc = getXML();
-    
     /**
      * Get the status for an instance.
      * 
@@ -52,6 +50,7 @@ public class InstanceStatusRetriever
      */
     public Instance getInstanceStatus()
     {
+        final Document doc = getXML();
         final XPath serverPath =
             DocumentHelper
                 .createXPath("/XMLAPI/MESSAGE/SYSTEMSTATUS/RESPONSE/Server");
@@ -237,15 +236,14 @@ public class InstanceStatusRetriever
      * 
      * @return The XML.
      */
-    private static Document getXML()
+    private Document getXML()
     {
         Document doc = null;
         
         InputStream is = null;
         try
         {
-            is = InstanceStatusRetriever.class.getResourceAsStream(
-                "test-status.xml");
+            is = getClass().getResourceAsStream("test-status.xml");
             doc = new SAXReader().read(is);
         }
         catch (Exception e)
