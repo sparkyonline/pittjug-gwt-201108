@@ -11,3 +11,4 @@ This is a collection of docs related to the presentation:
   * StatusApplication
   * AsyncService
   * CellWidgets
+  * OtherTidbits
