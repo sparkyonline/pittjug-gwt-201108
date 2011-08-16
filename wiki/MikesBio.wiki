@@ -13,8 +13,9 @@ Who am I, and who am I not?
     * Middleware focused
   * Former Lead at Fiserv, 6 years
   * Software Engineer Lead, AVP at PNC, 2 days
+  * Curious about GWT
 
 = Who am I not? =
 
   * UI Sherpa
-  * GWT Deity
+  * GWT Deity / Advocate
