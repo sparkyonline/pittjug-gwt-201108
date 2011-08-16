@@ -10,3 +10,4 @@ This is a collection of docs related to the presentation:
   * [GWTDesigner]
   * StatusApplication
   * AsyncService
+  * CellWidgets
