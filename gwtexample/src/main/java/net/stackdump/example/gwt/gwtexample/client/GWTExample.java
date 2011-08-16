@@ -33,7 +33,6 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.view.client.ListDataProvider;
-import net.stackdump.example.gwt.gwtexample.client.tree.EmulatorTree;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -76,8 +75,6 @@ public class GWTExample implements EntryPoint {
   private Environment environment;
 
   private EmulatorTable emulatorTable;
-
-  private EmulatorTree emulatorTree;
 
   /**
    * This is the entry point method.
@@ -124,7 +121,6 @@ public class GWTExample implements EntryPoint {
       public void onClick(ClickEvent event) {
         origEmuList.clear();
         resetList();
-        emulatorTree.clear();
       }
     });
     toolbarPanel.add(clearButton);
@@ -134,24 +130,16 @@ public class GWTExample implements EntryPoint {
     SimplePanel tablePanel = new SimplePanel();
     tabPanel.add(tablePanel, messages.tableTab(), false);
     
-    ScrollPanel tableScrollPanel = new ScrollPanel();
-    tablePanel.setWidget(tableScrollPanel);
-    tableScrollPanel.setSize("100%", "100%");
+    ScrollPanel scrollPanel = new ScrollPanel();
+    tablePanel.setWidget(scrollPanel);
+    scrollPanel.setSize("100%", "100%");
     
     emulatorTable = new EmulatorTable(emuList);
-    tableScrollPanel.setWidget(emulatorTable);
+    scrollPanel.setWidget(emulatorTable);
     emulatorTable.setSize("100%", "100%");
     
     SimplePanel treePanel = new SimplePanel();
     tabPanel.add(treePanel, messages.treeTab(), false);
-    
-    ScrollPanel treeScrollPanel = new ScrollPanel();
-    treePanel.setWidget(treeScrollPanel);
-    treeScrollPanel.setSize("100%", "100%");
-    
-    emulatorTree = new EmulatorTree();
-    treeScrollPanel.setWidget(emulatorTree);
-    emulatorTree.setSize("100%", "100%");
     mainPanel.add(tabPanel);
     Window.addResizeHandler(new ResizeHandler() {
       @Override
@@ -264,7 +252,6 @@ public class GWTExample implements EntryPoint {
       emulatorTable.getTable().getColumnSortList().clear();
       emuList.getList().addAll(origEmuList);
       emulatorTable.getTable().setVisibleRange(0, origEmuList.size());
-      emulatorTree.updateTree(environment);
     }
   }
 }
